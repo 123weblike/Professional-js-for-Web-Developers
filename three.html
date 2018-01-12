@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //一元加和减操作符
+    var s1='01';
+    var s2='1.1';
+    var s3='z';
+    var b=false;
+    var f=1.1;
+    var o={
+        valueOf:function(){
+            return -1;
+        }
+    };
+    s1=-s1;
+    console.log(s1);//-1
+    o=-o;
+    console.log(o);//1
+    console.log(-b);//0
+    console.log(-s3);//NAN
+    console.log(-f);//-1.1
+    console.log(-s2);//-1.1
+    //按位非:返回数值的反码；
+    //本质：操作数的负值减1
+    var num1=25;
+    var num2=~num1;
+    console.log(num2);//-26
+    //相当于
+    var num1=25;
+    var num2=-num1-1;
+    console.log(num2);//-26
+</script>
+</html>
