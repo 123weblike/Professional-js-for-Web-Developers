@@ -47,5 +47,32 @@
     //按位异或
     var result4=25^3;
     console.log(result4);//26
+    //左移
+    var a=2;
+    var b=a<<3;
+    console.log(b);//2e4=16
+    //有符号的右移
+    var c=6;
+    var d=c>>3;
+    console.log(d);//0
+    //无符号的右移
+    var m=64;
+    var h=m>>>3;
+    console.log(h);//8
+    var m2=-64;
+    var h2=m2>>>3;
+    console.log(h2);//536870904
+    //逻辑与
+    var found=true;
+    var n=(found&&h);
+    console.log(n); //8
+    var found2=false;
+    var n2=found2&&h;
+    console.log(n2);//false
+    //逻辑或
+    var f=false;
+    var aa=f||h;
+    console.log(aa);//8
+
 </script>
 </html>
