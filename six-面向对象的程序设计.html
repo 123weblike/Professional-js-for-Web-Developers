@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var person=new Object();
+    person.name="Nicholas";
+    person.age='25';
+    person.job='Software Engineer';
+    person.sayName=function(){
+        alert(this.name);
+    }
+    //person.sayName();
+    //用对象字面量语法可以这样写：
+    var person={
+        name:"Nicholas",
+        age:'25',
+        job:'Software Engineer',
+        sayName:function(){
+        alert(this.name);
+       }
+    }
+</script>
+</html>
